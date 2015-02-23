@@ -14,6 +14,7 @@
 		6E33BD131A9BA2140021D61B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E33BD121A9BA2140021D61B /* Images.xcassets */; };
 		6E33BD161A9BA2140021D61B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E33BD141A9BA2140021D61B /* LaunchScreen.xib */; };
 		6E33BD221A9BA2140021D61B /* QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E33BD211A9BA2140021D61B /* QuizTests.m */; };
+		6E99AF261A9BC46C003AF181 /* img0.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E99AF251A9BC46C003AF181 /* img0.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		6E33BD1B1A9BA2140021D61B /* QuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E33BD201A9BA2140021D61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E33BD211A9BA2140021D61B /* QuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizTests.m; sourceTree = "<group>"; };
+		6E99AF251A9BC46C003AF181 /* img0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img0.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				6E33BD0D1A9BA2130021D61B /* ViewController.m */,
 				6E33BD0F1A9BA2140021D61B /* Main.storyboard */,
 				6E33BD121A9BA2140021D61B /* Images.xcassets */,
+				6E99AF251A9BC46C003AF181 /* img0.png */,
 				6E33BD141A9BA2140021D61B /* LaunchScreen.xib */,
 				6E33BD051A9BA2130021D61B /* Supporting Files */,
 			);
@@ -168,6 +171,7 @@
 				TargetAttributes = {
 					6E33BD011A9BA2130021D61B = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9P64YE968V;
 					};
 					6E33BD1A1A9BA2140021D61B = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -199,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E99AF261A9BC46C003AF181 /* img0.png in Resources */,
 				6E33BD111A9BA2140021D61B /* Main.storyboard in Resources */,
 				6E33BD161A9BA2140021D61B /* LaunchScreen.xib in Resources */,
 				6E33BD131A9BA2140021D61B /* Images.xcassets in Resources */,
@@ -414,6 +419,7 @@
 				6E33BD271A9BA2140021D61B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E33BD281A9BA2140021D61B /* Build configuration list for PBXNativeTarget "QuizTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +428,7 @@
 				6E33BD2A1A9BA2140021D61B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

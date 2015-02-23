@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +15,77 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pergunta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAR-ZD-tPs">
+                                <rect key="frame" x="265" y="80" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="????????" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0B-qH-kse">
+                                <rect key="frame" x="262" y="259" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fht-dL-0b0">
+                                <rect key="frame" x="237" y="290" width="123" height="30"/>
+                                <state key="normal" title="Mostrar Resposta">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mostrarResposta:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Hm-V1-6Ve"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HA-kU-v08">
+                                <rect key="frame" x="240" y="108" width="119" height="30"/>
+                                <state key="normal" title="Mostrar Pergunta">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mostrarPergunta:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6jb-p6-OEY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C4Q-TD-Y1R">
+                                <rect key="frame" x="180" y="340" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Mfz-Vm-HNr"/>
+                                    <constraint firstAttribute="height" constant="128" id="hBN-2C-mmR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VAR-ZD-tPs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="5iM-7F-j12"/>
+                            <constraint firstItem="C4Q-TD-Y1R" firstAttribute="top" secondItem="fht-dL-0b0" secondAttribute="bottom" constant="28.5" id="FzZ-2y-vhh"/>
+                            <constraint firstItem="fht-dL-0b0" firstAttribute="top" secondItem="r0B-qH-kse" secondAttribute="bottom" constant="10" id="R3n-aC-AHk"/>
+                            <constraint firstItem="r0B-qH-kse" firstAttribute="top" secondItem="1HA-kU-v08" secondAttribute="bottom" constant="121" id="SEO-eR-Nlk"/>
+                            <constraint firstItem="r0B-qH-kse" firstAttribute="centerX" secondItem="VAR-ZD-tPs" secondAttribute="centerX" constant="0.75" id="m5p-oW-fcY"/>
+                            <constraint firstItem="C4Q-TD-Y1R" firstAttribute="top" secondItem="fht-dL-0b0" secondAttribute="bottom" constant="20" id="onH-g4-jL2"/>
+                            <constraint firstItem="r0B-qH-kse" firstAttribute="centerX" secondItem="fht-dL-0b0" secondAttribute="centerX" constant="1.5" id="pIv-zy-VrK"/>
+                            <constraint firstItem="1HA-kU-v08" firstAttribute="centerX" secondItem="VAR-ZD-tPs" secondAttribute="centerX" id="qqS-iI-qy9"/>
+                            <constraint firstAttribute="centerX" secondItem="VAR-ZD-tPs" secondAttribute="centerX" id="rFW-lQ-dhy"/>
+                            <constraint firstItem="C4Q-TD-Y1R" firstAttribute="centerX" secondItem="r0B-qH-kse" secondAttribute="centerX" id="u9d-c5-zIW"/>
+                            <constraint firstItem="1HA-kU-v08" firstAttribute="top" secondItem="VAR-ZD-tPs" secondAttribute="bottom" constant="8" id="vqn-FV-lCO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="C4Q-TD-Y1R" secondAttribute="bottom" constant="132" id="y2O-fa-SRM"/>
+                            <constraint firstItem="C4Q-TD-Y1R" firstAttribute="centerX" secondItem="fht-dL-0b0" secondAttribute="centerX" constant="-0.5" id="y51-mJ-6pY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FzZ-2y-vhh"/>
+                                <exclude reference="y51-mJ-6pY"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="botaoPergunta" destination="1HA-kU-v08" id="OaU-Sy-398"/>
+                        <outlet property="botaoResposta" destination="fht-dL-0b0" id="Qq5-70-lUm"/>
+                        <outlet property="image" destination="C4Q-TD-Y1R" id="eSX-Zr-rAO"/>
+                        <outlet property="pergunta" destination="VAR-ZD-tPs" id="CPL-71-CMY"/>
+                        <outlet property="resposta" destination="r0B-qH-kse" id="9gO-eV-yUh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
